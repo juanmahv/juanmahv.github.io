@@ -125,7 +125,7 @@ First of all, we need a .desktop file. This is a kind of index for KDE to manage
 
 The mos important keys to define here are *X-Plasma-API*, and *X-Plasma-MainScript*, which tells KDE what script to load and which type. For more information about .desktop files look up the KDE documentation online.
 
-In my case, the package is a folder called wmip with th following structure:
+In my case, the package is a folder called wmip with the following structure:
  
     wmip/contents/ui/main.qml
     wmip/metadata.dektop
@@ -134,7 +134,7 @@ Now that we have a package, we can register the plasmoid locally with *plasmapkg
 
     plasmapgk --install wmip
 
-And then got to your desktop, try to add a widget as usual and you should see the wmip  among all your local plasmoid, ready for installation. Grab and drop it to the desktop and you’ll see it in action.
+And then go to your desktop, add a widget as usual and you should see the wmip available. Grab and drop it to the desktop and you’ll see it in action.
 
 Obviously, if you plan to develop seriously you need a build tool. In my oppinion, CMake is the best option.
 All you need is a CMakeLists file like this:
@@ -162,6 +162,6 @@ and now you can use cmake to generate the corresponding makefile and install the
   
 and voilá, the plasmoid is installed.
 
-If you want to save tipping and get the all the files, go to [my repository](https://github.com/juanmahv/wmip) in GitHub. Feel free to download and play around.
+If you want to save typing and get the all the files, go to [my repository](https://github.com/juanmahv/wmip) in GitHub. Feel free to download it and play around.
 
-[Reference](http://techbase.kde.org/Development/Tutorials/Plasma/QML/GettingStarted)
+To know more, have a look to the [KDE documentation](http://techbase.kde.org/Development/Tutorials/Plasma/QML/GettingStarted)
