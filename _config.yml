@@ -1,5 +1,5 @@
-title:            My Blog
-description:      Personal blog of Juan M. de Hoyos.
+title:            juanmahv
+description:      Personal blog of Juan M. de Hoyos
 logo:             site-logo.png
 disqus_shortname: 
 search:           true
@@ -36,10 +36,8 @@ links:
     url: /about/
   - title: Articles
     url: /articles/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: Olemania
+    url: http://olemania.es
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
