@@ -162,6 +162,7 @@ and now you can use cmake to generate the corresponding makefile and install the
   
 and voilá, the plasmoid is installed.
 
+
 If you want to save typing and get the all the files, go to [my repository](https://github.com/juanmahv/wmip) in GitHub. Feel free to download it and play around.
 
 To know more, have a look to the [KDE documentation](http://techbase.kde.org/Development/Tutorials/Plasma/QML/GettingStarted)
