@@ -1,22 +1,22 @@
-title:            Site Title
-description:      Describe your website here.
+title:            My Blog
+description:      Personal blog of Juan M. de Hoyos
 logo:             site-logo.png
-disqus_shortname: 
+disqus_shortname: juanmahv
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              http://juanmahv.github.io/
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Juan M. de Hoyos
   avatar:         bio-photo.jpg
-  email:          you@email.com
+  email:          juanmahv@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        https://twitter.com/juanmahv
   facebook:       
-  github:         
+  github:         https://github.com/juanmahv
   stackexchange:  
-  linkedin:       
+  linkedin:       https://www.linkedin.com/in/juanmanueldehoyos
   instagram:      
   flickr:         
   tumblr:         
@@ -24,7 +24,7 @@ owner:
   google_plus:    
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   50642486
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -43,7 +43,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Berlin
 future:      true
 pygments:    true
 markdown:    kramdown
