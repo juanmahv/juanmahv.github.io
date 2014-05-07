@@ -163,9 +163,13 @@ and now you can use cmake to generate the corresponding makefile and install the
 and voilá, the plasmoid is installed.
 
 Just to check if the plasmoid was correctly installed, run
+    
     plasmoidviewer --list
+
 and you’ll get the list of plasmoid already registered. Now you can run 
+    
     plasmoidviewer wmip
+    
 to launch the plasmoid from the command line. If everything work, the plasmoid is ready for getting a deserved place in your desktop.
 
 That was all
