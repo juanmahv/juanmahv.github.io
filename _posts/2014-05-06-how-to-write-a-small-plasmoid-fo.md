@@ -10,7 +10,7 @@ image:
 comments: 
 share: 
 ---
-I installed KDE on my laptop recently and started playing around with plasmoids, small scripts for the plasma engine of KDE. Plasmoids are very versatile and very easy to program. KDE api gives you the possibility to choose among  several script languages. As I became involved professionally with QML in the last years, I decided  to use this markup language developed by the Qt  people to make my first script.
+I installed KDE on my laptop recently and started playing around with plasmoids, small scripts for the plasma engine of KDE. Plasmoids are very versatile and very easy to program. KDE api gives you the possibility to choose among  several script languages. As I became involved professionally with QML in the last years, I decided  to use this markup language developed by the Qt  people to program my first script.
 
 My plasmoid is called wmip, sort of *what’s my IP address*, and it’s suppose to display your current IP address along with the Internet Service Provider.
 
@@ -18,7 +18,7 @@ First of all, this plasmoid lives in just one file: main.qml. I’ll cover the c
 
 If you are just interested in the plasmoid itself you can get it from [here.](http://kde-apps.org/content/show.php/wmip?content=165084&PHPSESSID=d8fa8a386fcc05b6effdcf91d271c431)
 
-I just go over the basics of QML I needed for this example. There is many online [resources](http://qt-project.org/doc/qt-5/qmlfirststeps.html) if you want to dig into QML. 
+I’ll just go over the basics of QML I needed for this example. There is many online [resources](http://qt-project.org/doc/qt-5/qmlfirststeps.html) if you want to dig into QML/javascript. 
 
 Programming our first plasmoid with QML/javascript
 ------------------------------------------------------------------------------
@@ -29,9 +29,9 @@ As every QML file, main.qml starts importing the needed headers:
 import QtQuick 1.0;
 {% endhighlight %}
 
-It seems KDE4 only support QtQuick version 1.0 for plasmoids. I tries with 2.0 and it did not work.
+It seems KDE4 only support QtQuick version 1.0 for plasmoids. I tried with 2.0 and it did not work.
 
-Next, I defined the root element of type *item* and set the geometry 250 x 100. I also defined two string variables to store the IP address and the IPS.
+Next, I defined the root element of type *item* and set the geometry 250 x 100. I also defined two string variables to store the IP address and the ISP.
 
 {% highlight qml %}
 Item {
@@ -43,7 +43,7 @@ Item {
     property string isp: ""
 {% endhighlight %}
 
-And here is where the magic happens: The function * request()* accepts a url and a callback function as parameter. Basically, it makes a http request to the given url and each time the server response, the function given as second argument (*callback* in this case) jumps into action. What does *callback* do? well, It assumes the response coming from the server is json-formatted, and in this case is, parse the *query* and *isp* values and assign them to the string *ip* and *isp*.
+And here is where the magic happens: The function * request()* accepts a url and a callback function as parameter. Basically, it makes a http request to the given url and each time the server responses, the function given as second argument (*callback* in this case) jumps into action. What does *callback* do? well, It assumes the response coming from the server is json-formatted, parses the *query* and *isp* values and assign them to the string *ip* and *isp*.
 
 {% highlight javascript %}
   function callback(x){
@@ -64,9 +64,9 @@ And here is where the magic happens: The function * request()* accepts a url and
 
 The json parsing is guarded by an *if*, the reason is that during the request, the function *callback* is called several times before the server delivered a response with text.
 
-Note that *callback* get invoked asynchronously, that is, the function *request* just set the property *onreadystatechange* to call *callback* on each response from server, but it does not call the function itself. 
+Note that *callback* get invoked asynchronously: The function *request* just set the property *onreadystatechange* to call *callback* on each response from server, but it does not invoke the function itself. 
 
-How’s all this tarted?  Well I defined a timer element, which request the ip and isp once per minute by calling *request()*. Parameters  are the url to the *ip-api.com* server, and the *callback* function.
+How’s all this started?  Well I defined a timer element, which request the ip and isp once per minute by calling *request()*. Parameters  are the url to the *ip-api.com* server, and the *callback* function.
 
 {% highlight qml %}
  Timer {
@@ -90,7 +90,7 @@ The rest is just layout: 2 line of text to display the values inside a column el
 The qml engine updates the texts each time *ip* and *isp* get new values. That’s the magic of declarative programming.
  
 Installation
-------------
+-----------------
 
 There are several ways to install our plasmoid. I’ll cover all I used during development and deployment:
 
@@ -134,9 +134,9 @@ Now that we have a package, we can register the plasmoid locally with *plasmapkg
 
     plasmapgk --install wmip
 
-And then go to your desktop, add a widget as usual and you should see the wmip available. Grab and drop it to the desktop and you’ll see it in action.
+And then go to your desktop, try to add a widget as usual and you should see the wmip available. Grab and drop it to the desktop and you’ll see it in action.
 
-Obviously, if you plan to develop seriously you need a build tool. In my oppinion, CMake is the best option.
+Obviously, if you plan to develop seriously you need a build tool. In my opinion, CMake is the best option.
 All you need is a CMakeLists file like this:
 
     project(wmip)
@@ -155,14 +155,21 @@ All you need is a CMakeLists file like this:
 and now you can use cmake to generate the corresponding makefile and install the plasmoid:
 
     mkdir build
-    cd build
-    cmake <path to CMakeLists.txt>
+    cd build    
+    cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` <path to CMakeLists.txt>
     make all
     sudo make install
   
 and voilá, the plasmoid is installed.
 
+Just to check if the plasmoid was correctly installed, run
+    plasmoidviewer --list
+and you’ll get the list of plasmoid already registered. Now you can run 
+    plasmoidviewer wmip
+to launch the plasmoid from the command line. If everything work, the plasmoid is ready for getting a deserved place in your desktop.
 
+That was all
+------------------
 If you want to save typing and get the all the files, go to [my repository](https://github.com/juanmahv/wmip) in GitHub. Feel free to download it and play around.
 
 To know more, have a look to the [KDE documentation](http://techbase.kde.org/Development/Tutorials/Plasma/QML/GettingStarted)
