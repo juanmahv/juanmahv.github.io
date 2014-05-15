@@ -7,7 +7,7 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: true
 share: 
 ---
 I installed KDE on my laptop recently and started playing around with plasmoids, small scripts for the plasma engine of KDE. Plasmoids are very versatile and very easy to program. KDE api gives you the possibility to choose among  several script languages. As I became involved professionally with QML in the last years, I decided  to use this markup language developed by the Qt  people to program my first script.

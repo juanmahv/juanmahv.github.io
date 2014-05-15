@@ -7,7 +7,7 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: true
 share: 
 ---
 Quality software deserves more attention than typing some lines of code in our favorite programming language: Like many other engineering disciplines, it requires a process. I’m not talking  here about safety critical software, quality norms, etc.  It just about doing a professional, reliable, good work. 
