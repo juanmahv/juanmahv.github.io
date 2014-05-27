@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "synchronize git repositories offline with bundle"
+title: "Synchronize git repositories offline with bundle"
 modified: 2014-05-27 22:58:28 +0200
 tags: [git]
 image:
@@ -23,13 +23,13 @@ Let’s see an example: Imagine imagine one of your coworkers need all your chan
 
 	git bundle create ../mybundle.gitbundle f8469b7a4b..develop
  
-The reason of th ‘../’ is that I prefer creating the bundle file outside the repository three to keep thing more clear, but it’s up to you.
+The reason of th ‘../’ is that I prefer creating the bundle file outside the repository three to keep things more clear, but it’s up to you.
 
 It’s a good practice to check the bundle integrity before delivering. So we just type:
 
 	git bundle verify ../mybundle.gitbundle
 
-If everything is OK, the file suitable for distribution. 
+If everything is OK, the file is suitable for distribution. 
 
 In the other side, to apply the commits inside the bundle, just call
 
@@ -37,4 +37,4 @@ In the other side, to apply the commits inside the bundle, just call
  
 and the changes will flow into the repository.
 
-Easy, isn’t it? A latest tip. I use to set a tag to the latest commit of the bundle. Just to know where to start the next synchronization.
+Easy, isn’t it? A latest tip. I recommend to set a tag to the latest commit of the bundle. Just to know where to start the next synchronization.
