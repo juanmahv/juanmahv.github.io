@@ -23,7 +23,7 @@ Let’s see an example: Imagine imagine one of your coworkers need all your chan
 
 	git bundle create ../mybundle.gitbundle f8469b7a4b..develop
  
-The reason of th ‘../’ is that I prefer creating the bundle file outside the repository three to keep things more clear, but it’s up to you.
+The reason of ‘../’ is that I prefer creating the bundle file outside the repository tree to keep things more clear, but it’s up to you.
 
 It’s a good practice to check the bundle integrity before delivering. So we just type:
 
