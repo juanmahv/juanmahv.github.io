@@ -11,7 +11,7 @@ comments: yes
 share: yes
 ---
 
-Git is probably the best scm nowadays. The list of features is simply amazing and is hard to imagine a work-flow git is not able to serve.
+Git is probably the best scm nowadays. The list of features is simply amazing and is hard to imagine a development work-flow git is not suitable for.
 
 One of my favorite is sharing commits, that is, synchronize, between 2 repositories not connected over a network. 
 
