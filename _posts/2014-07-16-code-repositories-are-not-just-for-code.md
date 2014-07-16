@@ -21,4 +21,4 @@ I believe your code repository is the perfect place for all artifacts needed to 
 
 * Test data: Some unit test need mocked data. The repository y the right place for that.
 
-One of the advantages of saving all your project stuff under version control is all developers are automatically synchronized each time they pull from repository. So you so not have to worry about different teams working with different API versions, for instance. Keep in mind the repository is at the end a way of communication between all team members -and not just developers-. Make it work as such.
+One of the advantages of saving all your project stuff under version control is all developers are automatically synchronized each time they pull from repository. So you do not have to worry about different teams working with different API versions, for instance. Keep in mind the repository is at the end a way of communication between all team members -and not just developers-. Make it work as such.
