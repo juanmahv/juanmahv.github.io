@@ -37,10 +37,7 @@ links:
     url: /about/
   - title: Articles
     url: /articles/
-  - title: Olemania
-    url: http://olemania.es
-    external: true
-
+  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
 future:      true
