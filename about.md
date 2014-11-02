@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: "about"
+title: "Some words about me"
 modified: 2014-05-06 12:20
 tags: []
 image:
