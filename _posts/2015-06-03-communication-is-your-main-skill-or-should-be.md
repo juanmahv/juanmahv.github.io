@@ -7,7 +7,7 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: yes
 share: 
 ---
 Developing software is nowadays basically a teamwork. Those days where a single person spending nights awake and drinking caffeine was able to produce impressive pieces of software are gone. Professional software development is done in team where no one fights alone.
