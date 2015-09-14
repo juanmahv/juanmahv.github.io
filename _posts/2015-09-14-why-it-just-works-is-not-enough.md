@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why "it just works" is not enough"
+title: "Why *it just works* is not enough"
 modified: 2015-09-14 23:15:33 +0200
 tags: [software]
 image:
