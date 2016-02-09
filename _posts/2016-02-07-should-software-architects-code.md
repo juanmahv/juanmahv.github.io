@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Should Software Architects code"
-modified: 2016-02-07 21:36:52 +0100
+title: "Should Software Architects code?"
+modified: 2016-02-07 23:15:33 +0200
 tags: [software architecture]
 image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: yes
 share: 
 ---
 Tough question. Should Software Architects write code like developers do? Should they be part of the development team? The question has been around for  years and still there are strong opinions in all directions.
@@ -27,5 +27,3 @@ Having said that, beyond certain level of complexity, the role of Software Archi
 Additionally, a good programmer needs quietness and isolate herself to focus in such a demanding activity like coding. This is not always possible as the architect is usually the most interrupted person of the team.  Switching contexts during programming leads to sloppy code. 
 
 What I believe is a Software Architect must *be able to* code her own designs. But it does not mean she has to. A Software Architect must be always ready to open her Laptop and speak with the developer in their own language (in the broad sense of the word *language*). That makes them respected and accepted in the team as an equal. Developers, at the end, like to talk only with other developers.  
-
-  
