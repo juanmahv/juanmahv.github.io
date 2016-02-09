@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Should Software Architects code?"
+title: "Should Software Architects code"
 modified: 2016-02-07 21:36:52 +0100
 tags: [software architecture]
 image:
