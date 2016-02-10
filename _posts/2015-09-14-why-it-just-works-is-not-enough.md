@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Why \"it just works\" is not enough"
 modified: 2015-09-14 23:15:33 +0200
@@ -20,4 +20,5 @@ An here lies the problem: From outside, that is, without detailed inspection of 
   
 As the title of this post claims, "just working" it not enough. Of course the software has to solve the problems it was designed for, but this is not enough. How these problems are solved matters, and depending on the answer to that *how* we'll and up with an efficient system able to deliver customer value in the market at time or at some point we'll suffer with each new release, losing market share until some manager decides to cut the tree.
 
-Each time you hear the claim "yes, but it works", well, maybe it's working is the only aspect worth to mention.   
+Each time you hear the claim "yes, but it works", well, maybe it's working is the only aspect worth to mention.    
+    
