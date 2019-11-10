@@ -258,7 +258,7 @@ But at the end, this models better the relationship in the real world. Do you ha
 
 So it should be in software design.
  
- #### References
+#### References
 1. Original paper: [http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf]
  
 2. “The Paperboy, The Wallet,and The Law Of Demeter” . D Bock
