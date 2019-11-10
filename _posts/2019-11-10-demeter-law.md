@@ -157,7 +157,7 @@ This imply a level of knowledge that no one from outside *Customer* class should
 
 To sum up: We are breaking the Law of Demeter.
  
- ### Law of Demeter
+### Law of Demeter
 According to [Wikipedia](https://en.wikipedia.org/wiki/Law_of_Demeter), The Law of Demeter for functions requires that a method **m** of an object **O** may only invoke the methods of the following kinds of objects:
 
     O itself
