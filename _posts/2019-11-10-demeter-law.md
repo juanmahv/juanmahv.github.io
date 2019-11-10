@@ -259,8 +259,9 @@ But at the end, this models better the relationship in the real world. Do you ha
 So it should be in software design.
  
  #### References
- Original paper: [http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf]
-“The Paperboy, The Wallet,and The Law Of Demeter” . D Bock
-“An Empirical Validation of the Benefits of Adhering to the Law of Demeter”.Guo, Würsch, Giger and Gall.
-[https://en.wikipedia.org/wiki/Law_of_Demeter]
-[https://pragprog.com/articles/tell-dont-ask]
+1. Original paper: [http://www.ccs.neu.edu/research/demeter/papers/law-of-demeter/oopsla88-law-of-demeter.pdf]
+ 
+2. “The Paperboy, The Wallet,and The Law Of Demeter” . D Bock
+3. “An Empirical Validation of the Benefits of Adhering to the Law of Demeter”.Guo, Würsch, Giger and Gall.
+4. [https://en.wikipedia.org/wiki/Law_of_Demeter]
+5. [https://pragprog.com/articles/tell-dont-ask]
