@@ -178,7 +178,7 @@ In side a method, we can only talk to *friends*:
 
 All other Types are *strangers*. It's not allowed invoking method of an object returned by another method: The friends of my friends are strangers to me.
 
-In the code snipped above, class *Wallet* is clearly an strange for *Main()* method.
+In the code snipped above, class *Wallet* is clearly a strange for *Main()* method.
 
 Note: The concept of friend is used here as in plain language. Nothing to do with the keyword *friend* in c++
 
